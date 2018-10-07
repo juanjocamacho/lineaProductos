@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16G1314" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,77 +18,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="KKZ-X8-eN5">
-                                <rect key="frame" x="20" y="30" width="560" height="156"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="d4J-Nx-9ec">
+                                <rect key="frame" x="20" y="60" width="560" height="207"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="0v7-UE-CUO">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="156"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nombre de usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJn-sN-kl4">
-                                                <rect key="frame" x="0.0" y="0.0" width="270" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Introduce un nombre de usuario" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6F-U7-QzV">
-                                                <rect key="frame" x="0.0" y="36" width="560" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Introduce tu apellido" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HJ3-fI-RJ6">
-                                                <rect key="frame" x="0.0" y="66" width="560" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="apellidoDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="r3X-Eh-hX1"/>
-                                                </connections>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGK-Pm-luF">
-                                                <rect key="frame" x="0.0" y="96" width="39" height="30"/>
-                                                <state key="normal" title="Reset">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="setResetBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUV-t6-olD"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80p-BY-Lmg">
-                                                <rect key="frame" x="0.0" y="126" width="96" height="30"/>
-                                                <state key="normal" title="Cambiar color">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yHu-33-Cq0"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJn-sN-kl4">
+                                        <rect key="frame" x="145" y="0.0" width="270" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Introduce un nombre de usuario" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6F-U7-QzV">
+                                        <rect key="frame" x="0.0" y="51" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Introduce tu apellido" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HJ3-fI-RJ6">
+                                        <rect key="frame" x="0.0" y="93" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="apellidoDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="zss-va-L4S"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGK-Pm-luF">
+                                        <rect key="frame" x="261" y="135" width="39" height="30"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="setResetBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUV-t6-olD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80p-BY-Lmg">
+                                        <rect key="frame" x="232" y="177" width="96" height="30"/>
+                                        <state key="normal" title="Cambiar color">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gEN-jl-J83"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="106" id="3vy-7u-8lO"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="4To-yd-h7B"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="156" id="Xgb-V1-j3d"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="bgs-EB-3Jn"/>
-                                    <constraint firstAttribute="width" constant="560" id="ciO-QM-CgP"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="206" id="fcP-9a-xAg"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="206" id="sZv-bp-Q4a"/>
-                                    <constraint firstAttribute="height" constant="156" id="sn4-GN-rnX"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.80241227149963379" green="0.91954517364501953" blue="0.98684161901473999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="KKZ-X8-eN5" secondAttribute="trailing" id="0YS-za-FC3"/>
-                            <constraint firstItem="KKZ-X8-eN5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="60" id="BrI-MN-DiV"/>
-                            <constraint firstItem="KKZ-X8-eN5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O1R-kl-bdj"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KKZ-X8-eN5" secondAttribute="bottom" constant="414" id="zdc-k5-4An"/>
+                            <constraint firstItem="d4J-Nx-9ec" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="MHb-LB-mAy"/>
+                            <constraint firstItem="d4J-Nx-9ec" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="T13-2E-ks0"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="apellidoTxt" destination="HJ3-fI-RJ6" id="OPc-WQ-t7Z"/>
+                        <outlet property="apellidoTxt" destination="HJ3-fI-RJ6" id="Eky-Gp-gps"/>
                         <outlet property="back" destination="80p-BY-Lmg" id="aKK-x8-Pjm"/>
                         <outlet property="background" destination="8bC-Xf-vdC" id="mUf-Pz-fLH"/>
+                        <outlet property="fondoView" destination="8bC-Xf-vdC" id="ywD-Qe-vDK"/>
                         <outlet property="nombreLbl" destination="AJn-sN-kl4" id="84A-lJ-P3O"/>
                         <outlet property="nombreTxt" destination="p6F-U7-QzV" id="kju-6w-C3F"/>
                     </connections>
