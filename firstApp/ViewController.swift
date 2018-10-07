@@ -13,13 +13,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //MARK: properties
 
     @IBOutlet weak var nombreLbl: UILabel!
+    
     @IBOutlet weak var nombreTxt: UITextField!
     @IBOutlet weak var apellidoTxt: UITextField!
-    var nombre = ""
+    var nombre : String = ""
     
     
     
-    @IBOutlet weak var fondoView: UIView!
+    @IBOutlet weak var fondoVista: UIView!
+   
   
     
     override func viewDidLoad() {
@@ -27,6 +29,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         nombreTxt.delegate = self;
         apellidoTxt.delegate = self;
+        nombreLbl.text = "Hola desconocido"
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,11 +42,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //MARK: actions
     @IBAction func setResetBtn(sender: UIButton) {
      nombreLbl.text = "Hola desconocido"
-     nombreTxt.text = "Introduce un nombre de usuario"
-     apellidoTxt.text = "Introduce tu apellido"
+     nombreTxt.text = "Nombre de usuario"
+     apellidoTxt.text = "Apellido"
      
      }
-
+    @IBAction func cambiarColor(sender: UIButton) {
+        let randomRed:CGFloat = CGFloat(drand48())
+        let randomGreen:CGFloat = CGFloat(drand48())
+        let randomBlue:CGFloat = CGFloat(drand48())
+        fondoVista.backgroundColor = UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+         }
+  
     
     //MARK: UITextFieldDelegate
     
@@ -54,28 +63,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
    
-    func textFieldDidEndEditing(textField: UITextField) {
-        let saludo = "Hola "
-        nombreLbl.text = saludo + textField.text!
-        nombre = textField.text!
+   /** func textFieldDidEndEditing(textField: UITextField) {
+        nombreLbl.text = "Hola " + textField.text!
+        
+    
+        
+    }**/
+    
+    @IBAction func nombreDidEndEditing(sender: UITextField) {
+        nombreLbl.text = "Hola " + sender.text!
+        nombre = sender.text!
+    }
+    @IBAction func apellidoDidEndEditing(sender: UITextField) {
+        //textFieldDidEndEditing(sender)
+        nombreLbl.text = "Hola " + nombre + " " + sender.text!
         
     }
     
-    @IBAction func apellidoDidEndEditing(sender: UITextField) {
-        let saludo = "Hola "
-        nombreLbl.text = saludo + nombre + sender.text!
-    }
     
-    @IBAction func changeColor(sender: UIButton) {
-        fondoView.backgroundColor = getRandomColor()
-    }
     
-    func getRandomColor() -> UIColor{
-        let randomRed:CGFloat = CGFloat(drand48())
-        let randomGreen:CGFloat = CGFloat(drand48())
-        let randomBlue:CGFloat = CGFloat(drand48())
-        return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
-    }
     
 
 }
