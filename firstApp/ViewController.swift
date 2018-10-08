@@ -13,7 +13,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //MARK: properties
 
     @IBOutlet weak var nombreLbl: UILabel!
-    
     @IBOutlet weak var nombreTxt: UITextField!
     @IBOutlet weak var apellidoTxt: UITextField!
     var nombre : String = ""
@@ -54,22 +53,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
          }
   
     
-    //MARK: UITextFieldDelegate
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        //Hide the keyboard.
-        textField.resignFirstResponder()
-        return true
-    }
-    
-   
-   /** func textFieldDidEndEditing(textField: UITextField) {
-        nombreLbl.text = "Hola " + textField.text!
-        
-    
-        
-    }**/
-    
     @IBAction func nombreDidEndEditing(sender: UITextField) {
         nombreLbl.text = "Hola " + sender.text!
         nombre = sender.text!
@@ -80,6 +63,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    //MARK: UITextFieldDelegate
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        //Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
     
     
     
