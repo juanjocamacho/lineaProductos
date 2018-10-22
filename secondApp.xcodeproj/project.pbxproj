@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		294CDCC6217E140F00C9B55A /* EvaluacionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CDCC5217E140F00C9B55A /* EvaluacionControl.swift */; };
 		294CDCC8217E2A8500C9B55A /* Amigo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CDCC7217E2A8500C9B55A /* Amigo.swift */; };
+		29FC060D217E318C00243D56 /* AmigoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FC060C217E318C00243D56 /* AmigoTableViewCell.swift */; };
+		29FC060F217E34D000243D56 /* AmigoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FC060E217E34D000243D56 /* AmigoTableViewController.swift */; };
 		590E6D09216B8D23009FF4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E6D08216B8D23009FF4BE /* AppDelegate.swift */; };
 		590E6D0B216B8D23009FF4BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E6D0A216B8D23009FF4BE /* ViewController.swift */; };
 		590E6D0E216B8D23009FF4BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590E6D0C216B8D23009FF4BE /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		294CDCC5217E140F00C9B55A /* EvaluacionControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvaluacionControl.swift; sourceTree = "<group>"; };
 		294CDCC7217E2A8500C9B55A /* Amigo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amigo.swift; sourceTree = "<group>"; };
+		29FC060C217E318C00243D56 /* AmigoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmigoTableViewCell.swift; sourceTree = "<group>"; };
+		29FC060E217E34D000243D56 /* AmigoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmigoTableViewController.swift; sourceTree = "<group>"; };
 		590E6D05216B8D23009FF4BE /* secondApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = secondApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		590E6D08216B8D23009FF4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		590E6D0A216B8D23009FF4BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		590E6CFC216B8D22009FF4BE = {
 			isa = PBXGroup;
 			children = (
+				29FC060E217E34D000243D56 /* AmigoTableViewController.swift */,
+				29FC060C217E318C00243D56 /* AmigoTableViewCell.swift */,
 				294CDCC5217E140F00C9B55A /* EvaluacionControl.swift */,
 				294CDCC7217E2A8500C9B55A /* Amigo.swift */,
 				590E6D07216B8D23009FF4BE /* secondApp */,
@@ -204,6 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				294CDCC6217E140F00C9B55A /* EvaluacionControl.swift in Sources */,
+				29FC060F217E34D000243D56 /* AmigoTableViewController.swift in Sources */,
+				29FC060D217E318C00243D56 /* AmigoTableViewCell.swift in Sources */,
 				590E6D0B216B8D23009FF4BE /* ViewController.swift in Sources */,
 				590E6D09216B8D23009FF4BE /* AppDelegate.swift in Sources */,
 				294CDCC8217E2A8500C9B55A /* Amigo.swift in Sources */,

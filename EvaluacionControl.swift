@@ -22,6 +22,7 @@ class EvaluacionControl: UIView {
     
     //MARK: atributos
     //var gradoAfinidad = 0
+    
     var botones: [UIButton] = []
     var gradoAfinidad = 0 {
         didSet{
