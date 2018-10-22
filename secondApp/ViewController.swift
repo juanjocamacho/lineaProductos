@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var controlEvaluacion: EvaluacionControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,6 +44,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBAction func reset(sender: UIButton) {
         NombreLbl.text = "Hola desconocido"
         imgView.image = UIImage.init(named: "Imagen predeterminada")
+        controlEvaluacion.gradoAfinidad = 0
     }
     
     @IBAction func introducirUsuario(sender: UITextField) {
