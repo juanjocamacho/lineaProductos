@@ -17,8 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="Imagen predeterminada" translatesAutoresizingMaskIntoConstraints="NO" id="mQ8-yb-Ps9">
+                                <rect key="frame" x="20" y="124" width="320" height="320"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UL7-nZ-fw0" appends="YES" id="vtR-jh-Aaz"/>
+                                </connections>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="oJG-xN-SDo" customClass="EvaluacionControl" customModule="secondApp">
+                                <rect key="frame" x="20" y="441" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="223" placeholderIntrinsicHeight="81" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="k5r-zm-dbC">
-                                <rect key="frame" x="0.0" y="35" width="223" height="81"/>
+                                <rect key="frame" x="20" y="35" width="223" height="81"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hola desconocido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIi-8K-WaX">
                                         <rect key="frame" x="0.0" y="0.0" width="138" height="21"/>
@@ -43,17 +54,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="Imagen predeterminada" translatesAutoresizingMaskIntoConstraints="NO" id="mQ8-yb-Ps9">
-                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="UL7-nZ-fw0" appends="YES" id="vtR-jh-Aaz"/>
-                                </connections>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="oJG-xN-SDo" customClass="EvaluacionControl" customModule="secondApp">
-                                <rect key="frame" x="9" y="436" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
