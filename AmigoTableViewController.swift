@@ -63,7 +63,17 @@ class AmigoTableViewController: UITableViewController {
 
         return cell
     }
-    
+    @IBAction func addNuevoAmigo(sender: UIStoryboardSegue){
+        let sourceViewController = sender.sourceViewController as!
+        AmigoViewController
+        
+        let nuevoAmigo = sourceViewController.amigo
+        
+        amigos.append(nuevoAmigo!)
+        let newIndexPath = NSIndexPath(forRow: amigos.count-1, inSection: 0)
+        tableView.insertRowsAtIndexPaths([newIndexPath],
+                                         withRowAnimation: .Bottom)
+    }
 
     /*
     // Override to support conditional editing of the table view.
