@@ -22,6 +22,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="escribir:" destination="BYZ-38-t0r" eventType="valueChanged" id="B5e-Jo-aLU"/>
                                     <action selector="introducirUsuario:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="10R-MX-uh1"/>
                                 </connections>
                             </textField>
@@ -47,12 +48,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="034-N7-WhQ">
                             <connections>
-                                <segue destination="OKK-rl-McL" kind="unwind" unwindAction="addNuevoAmigo:" id="HNp-wv-Ha9"/>
+                                <segue destination="OKK-rl-McL" kind="unwind" unwindAction="addNuevoAmigo:" id="EwI-aD-6Om"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="NombreTxt" destination="jS4-yU-g0S" id="DkG-HY-kyX"/>
+                        <outlet property="NombreTxt" destination="jS4-yU-g0S" id="LIO-Vw-8GF"/>
                         <outlet property="controlEvaluacion" destination="oJG-xN-SDo" id="xlG-7G-qEN"/>
                         <outlet property="imgView" destination="mQ8-yb-Ps9" id="gJP-Sg-5FT"/>
                     </connections>
@@ -113,7 +114,7 @@
                     <navigationItem key="navigationItem" title="Lista de Amigos" id="MR5-cB-GJn">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="2ka-1E-rPV">
                             <connections>
-                                <segue destination="aOK-vq-8oG" kind="show" identifier="AddAmigo" id="Zdu-CU-z07"/>
+                                <segue destination="aOK-vq-8oG" kind="presentation" identifier="AddAmigo" id="Zdu-CU-z07"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

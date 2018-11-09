@@ -17,6 +17,8 @@ class AmigoViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
         // Do any additional setup after loading the view, typically from a nib.
         NombreTxt.delegate = self
        
+      
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +30,7 @@ class AmigoViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
 
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var NombreTxt: UITextField!
+    
     var amigo : Amigo?
     @IBOutlet weak var saveBtn: UIBarButtonItem!
     
@@ -47,7 +50,16 @@ class AmigoViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
         NombreTxt.text = sender.text!
     }
     
-    
+   
+    @IBAction func escribir(sender: UITextField) {
+        if(NombreTxt.text != nil){
+            saveBtn.enabled = true
+        }
+        else{
+            saveBtn.enabled = false
+        }
+        
+    }
     
     
     //MARK: UIImageViewControllerDelegate
