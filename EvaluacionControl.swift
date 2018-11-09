@@ -22,6 +22,7 @@ class EvaluacionControl: UIView {
     
     //MARK: atributos
     //var gradoAfinidad = 0
+    
     var botones: [UIButton] = []
     var gradoAfinidad = 0 {
         didSet{
@@ -29,7 +30,7 @@ class EvaluacionControl: UIView {
         }
     }
     
-    
+    //CGRect(x: 0, y: 0, width: 44, height: 44)
     //MARK: inicialización
     required init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
@@ -40,8 +41,7 @@ class EvaluacionControl: UIView {
             boton.setImage(UIImage(named:"Estrella vacia"), forState: .Normal)
             boton.setImage(UIImage(named:"Estrella rellena"), forState: .Selected)
             boton.adjustsImageWhenHighlighted = false
-            boton.addTarget(self, action: #selector(btnEval(_:)),
-                            forControlEvents: .TouchDown)
+            boton.addTarget(self, action: #selector(btnEval(_:)), forControlEvents: .TouchDown)
             boton.tag = i
             botones += [boton]
             addSubview(boton)
@@ -51,13 +51,10 @@ class EvaluacionControl: UIView {
         return CGSize(width: 240, height: 44)
     }
     func btnEval(boton: UIButton) {
-       
-        //print(" Botón \(boton.tag) pulsado...�")
+        //print("Botón pulsado...")
+        //print(" Botón \(boton.tag) pulsado...")
        
             gradoAfinidad = botones.indexOf(boton)! + 1
-            /**for (i, botonI) in botones.enumerate(){
-                botonI.selected = gradoAfinidad > i
-            }**/
             //actualizaEstrellas()
         
     }
@@ -71,7 +68,7 @@ class EvaluacionControl: UIView {
     func actualizaEstrellas(){
         for (i, botonI) in botones.enumerate(){
             botonI.selected = gradoAfinidad > i
-                   }
+        }
        
     }
     
