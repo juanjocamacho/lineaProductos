@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AmigoViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var controlEvaluacion: EvaluacionControl!
     
@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         NombreTxt.delegate = self
+        saveBtn.enabled = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +29,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var NombreTxt: UITextField!
     
-    @IBOutlet weak var NombreLbl: UILabel!
+    var amigo: Amigo?
+    
+    
+    @IBOutlet weak var saveBtn: UIBarButtonItem!
+  
     
     //MARK: Actions
     
@@ -41,14 +46,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         imagePickerCtrl.delegate = self
         presentViewController(imagePickerCtrl, animated: true, completion: nil)
     }
-    @IBAction func reset(sender: UIButton) {
-        NombreLbl.text = "Hola desconocido"
-        imgView.image = UIImage.init(named: "Imagen predeterminada")
-        controlEvaluacion.gradoAfinidad = 0
-    }
+  
     
     @IBAction func introducirUsuario(sender: UITextField) {
-        NombreLbl.text = "Hola " + sender.text!
+        //NombreLbl.text = "Hola " + sender.text!
     }
     
     //MARK: UIImageViewControllerDelegate
@@ -69,6 +70,32 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         textField.resignFirstResponder()
         return true
     }
+    
+    //MARK: Navegación
+    
+    @IBAction func cancelar(sender: UIBarButtonItem) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (sender !== saveBtn){
+            return
+        }
+        amigo = Amigo(nombre: NombreTxt.text ?? "", foto: imgView.image, gAfinidad: controlEvaluacion.gradoAfinidad)
+        
+    }
+    
+   
+    
+    @IBAction func editing(sender: UITextField) {
+        if(sender.text != nil){
+            saveBtn.enabled = true
+        }
+        
+        
+    }
+    
+   
 
 }
 

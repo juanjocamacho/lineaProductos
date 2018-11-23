@@ -10,11 +10,13 @@
 		294CDCC6217E140F00C9B55A /* EvaluacionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CDCC5217E140F00C9B55A /* EvaluacionControl.swift */; };
 		294CDCC8217E2A8500C9B55A /* Amigo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CDCC7217E2A8500C9B55A /* Amigo.swift */; };
 		590E6D09216B8D23009FF4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E6D08216B8D23009FF4BE /* AppDelegate.swift */; };
-		590E6D0B216B8D23009FF4BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E6D0A216B8D23009FF4BE /* ViewController.swift */; };
+		590E6D0B216B8D23009FF4BE /* AmigoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E6D0A216B8D23009FF4BE /* AmigoViewController.swift */; };
 		590E6D0E216B8D23009FF4BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590E6D0C216B8D23009FF4BE /* Main.storyboard */; };
 		590E6D10216B8D23009FF4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590E6D0F216B8D23009FF4BE /* Assets.xcassets */; };
 		590E6D13216B8D23009FF4BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590E6D11216B8D23009FF4BE /* LaunchScreen.storyboard */; };
 		590E6D1E216B8D23009FF4BE /* secondAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E6D1D216B8D23009FF4BE /* secondAppTests.swift */; };
+		99F3C72021A8556700E42DB7 /* AmigoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3C71F21A8556700E42DB7 /* AmigoTableViewCell.swift */; };
+		99F3C72221A858C400E42DB7 /* AmigoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3C72121A858C400E42DB7 /* AmigoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,7 @@
 		294CDCC7217E2A8500C9B55A /* Amigo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amigo.swift; sourceTree = "<group>"; };
 		590E6D05216B8D23009FF4BE /* secondApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = secondApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		590E6D08216B8D23009FF4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		590E6D0A216B8D23009FF4BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		590E6D0A216B8D23009FF4BE /* AmigoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmigoViewController.swift; sourceTree = "<group>"; };
 		590E6D0D216B8D23009FF4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		590E6D0F216B8D23009FF4BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		590E6D12216B8D23009FF4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		590E6D19216B8D23009FF4BE /* secondAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = secondAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		590E6D1D216B8D23009FF4BE /* secondAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondAppTests.swift; sourceTree = "<group>"; };
 		590E6D1F216B8D23009FF4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F3C71F21A8556700E42DB7 /* AmigoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmigoTableViewCell.swift; sourceTree = "<group>"; };
+		99F3C72121A858C400E42DB7 /* AmigoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmigoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 		590E6CFC216B8D22009FF4BE = {
 			isa = PBXGroup;
 			children = (
+				99F3C72121A858C400E42DB7 /* AmigoTableViewController.swift */,
+				99F3C71F21A8556700E42DB7 /* AmigoTableViewCell.swift */,
 				294CDCC5217E140F00C9B55A /* EvaluacionControl.swift */,
 				294CDCC7217E2A8500C9B55A /* Amigo.swift */,
 				590E6D07216B8D23009FF4BE /* secondApp */,
@@ -84,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				590E6D08216B8D23009FF4BE /* AppDelegate.swift */,
-				590E6D0A216B8D23009FF4BE /* ViewController.swift */,
+				590E6D0A216B8D23009FF4BE /* AmigoViewController.swift */,
 				590E6D0C216B8D23009FF4BE /* Main.storyboard */,
 				590E6D0F216B8D23009FF4BE /* Assets.xcassets */,
 				590E6D11216B8D23009FF4BE /* LaunchScreen.storyboard */,
@@ -204,7 +210,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				294CDCC6217E140F00C9B55A /* EvaluacionControl.swift in Sources */,
-				590E6D0B216B8D23009FF4BE /* ViewController.swift in Sources */,
+				99F3C72221A858C400E42DB7 /* AmigoTableViewController.swift in Sources */,
+				99F3C72021A8556700E42DB7 /* AmigoTableViewCell.swift in Sources */,
+				590E6D0B216B8D23009FF4BE /* AmigoViewController.swift in Sources */,
 				590E6D09216B8D23009FF4BE /* AppDelegate.swift in Sources */,
 				294CDCC8217E2A8500C9B55A /* Amigo.swift in Sources */,
 			);
